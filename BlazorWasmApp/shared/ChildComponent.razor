@@ -1,0 +1,17 @@
+﻿<div class="alert alert-info">
+    @ChildContent
+</div>
+<div class="alert alert-@AlertTheme">
+
+    <input type="checkbox" @bind="_darkThemeOn" />
+    this theme : @AlertTheme
+</div>
+
+@code
+{
+    private bool _darkThemeOn { get; set; }
+    private string AlertTheme => _darkThemeOn ? "dark" : "light";
+
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+}

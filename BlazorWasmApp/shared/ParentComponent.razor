@@ -1,0 +1,13 @@
+﻿<div class="alert alert-success">
+    @AlertText
+</div>
+
+<ChildComponent>
+    <p>This is a child component!</p>
+</ChildComponent>
+
+@code
+{
+    [Parameter]
+    public string AlertText { get; set; }
+}
