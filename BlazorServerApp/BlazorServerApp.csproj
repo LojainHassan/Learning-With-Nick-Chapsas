@@ -6,4 +6,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Content Include="..\..\..\OneDrive\Pictures\Screenshots\Screenshot 2026-07-20 222243.png" Link="wwwroot\Images\DependencyInjection\Screenshot 2026-07-20 222243.png" />
+  </ItemGroup>
+
 </Project>
