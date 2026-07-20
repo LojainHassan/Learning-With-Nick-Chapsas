@@ -1,0 +1,17 @@
+﻿@page "/parent"
+@using BlazorServerApp.Service
+@inject RandomService RandomService
+<div class="alert alert-success">
+    @AlertText
+</div>
+<div class="alert alert-danger">
+    @RandomService.RandomGuid
+</div>
+
+
+
+@code
+{
+    [Parameter]
+    public string AlertText { get; set; }
+}
