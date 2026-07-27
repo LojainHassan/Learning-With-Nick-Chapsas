@@ -1,5 +1,12 @@
 ﻿@page "/counter"
+@page "/counter/{startingCount:int?}"
 
+@*Mandatory to specify type in blazor 
+
+Parameter name is case insensitive
+use ? tp make it optional ? 
+-- support multi route page
+*@
 <PageTitle>Counter</PageTitle>
 
 <h1>Counter</h1>
@@ -9,8 +16,14 @@
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
 
 @code {
+    [Parameter]
+    public int startingCount { get; set; } = 0;
     private int currentCount = 0;
 
+    protected override void OnInitialized()
+    {
+        currentCount = startingCount;
+    }
     private void IncrementCount()
     {
         currentCount++;
