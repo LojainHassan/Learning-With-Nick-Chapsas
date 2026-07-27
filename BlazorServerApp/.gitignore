@@ -131,3 +131,18 @@ $RECYCLE.BIN/
 .DS_Store
 
 _NCrunch*
+
+# Visual Studio
+.vs/
+
+# Build folders
+bin/
+obj/
+
+# Visual Studio document files
+DocumentLayout.json
+DocumentLayout.backup.json
+
+# VS cache
+*.dtbcache.v2
+*.futdcache.v2
